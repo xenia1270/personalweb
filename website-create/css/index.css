@@ -1,0 +1,137 @@
+.nav{
+    text-align:center;
+}
+
+.nav ul li{
+    font-size:18px;
+    display:inline-block;
+    padding: 5px 20px;
+    background: #1f5a7f;
+    cursor: pointer;
+    text-align:center;
+    border-radius: 12px;
+}
+.nav ul li:hover{
+    background:rgb(167, 95, 107);
+}
+
+.nav ul li a{
+    text-decoration: none;
+    color: white;
+}
+
+.aboutme{
+    display: inline-block;
+}
+
+.header{
+    background: url(https://cdn-images.zety.com/pages/resume_headings.jpg) no-repeat;
+    text-align: center;
+    height:500px;
+    top:0;
+}
+.header h1{
+    color:#1f5a7f;
+    padding: 50px 0px 0px 0px;
+    width: 100%;
+}
+.header h2{
+    color:#1f5a7f;
+    padding:0px 0px 200px 0px;
+}
+.about{
+    text-align:center;
+}
+
+.aboutme h2{
+    display:inline-block;
+}
+.aboutme img{
+    display:inline-block;
+    vertical-align:middle;
+}
+
+.about p{
+    text-align:left;
+    padding: 0px 50px;
+    margin:0px;
+}
+.skills{
+    text-align:center;
+}
+
+.skills .skillsandpic h2{
+    display:inline-block;
+}
+.skills .skillsandpic img{
+    display:inline-block;
+    vertical-align:middle;
+}
+
+.education .edu{
+    text-align:center;
+}
+
+.education .edu h2{
+    display:inline-block;
+}
+.education .edu img{
+    display:inline-block;
+    vertical-align:middle;
+}
+
+.educontent {
+    padding:0px 50px;
+}
+
+.workexp {
+    text-align:center;
+}
+.work .workexp h2{
+    display:inline-block;
+}
+.work .workexp img{
+    display:inline-block;
+    vertical-align:middle;
+}
+
+.workcontent{
+    padding:0px 50px;
+}
+
+h2{
+    color:#1f5a7f;
+}
+.projects{
+    text-align:center;
+}
+
+.proj h2{
+    display:inline-block;
+}
+
+.proj img{
+    display:inline-block;
+    vertical-align:middle;
+}
+
+*{
+    box-sizing:border-box
+}
+.pro-img{
+    display:flex;
+}
+.button{
+    float: 33.33%;
+    padding:120px;
+}
+
+.button button{
+    background-color:#1f5a7f;
+    color:white;
+    cursor: pointer;
+}
+.button button:hover{
+    background-color: pink;
+}
+

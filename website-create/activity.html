@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Activity</title>
+    <style>
+       
+       nav{
+           text-align: center;
+           padding-top: 30px;
+       }
+       nav ul li{
+           display: inline-block;
+           border:1px solid pink;
+           background: pink;
+           border-radius: 10px;
+           font-size:18px;
+           text-align: center;
+           margin:10px;
+           padding:10px;
+       }
+       nav ul li:hover{
+           background: #df685c;
+           cursor:pointer;
+       }
+       
+       h2, h3{
+            color:#df685c;
+        }
+        #menu a li{
+            background:#ffd1bf;
+            width:100px;
+            margin:5px;
+            font-weight:bold;
+            font-size:18px;
+            text-align:center;
+        }
+        #menu a{
+            text-decoration:none;
+        }
+        .ingre li{
+            list-style-type: circle;
+        }
+        article #recipes{
+            margin-left:50px;
+        }
+        summary{
+            font-size:24px;
+            color:#df685c;
+            font-weight:bold;
+            cursor:grab;
+        }
+        #contact a{
+            text-decoration: none;
+            font-size: 18px;
+            line-height: 30px;
+            margin-left:50px;
+        }
+        img{
+            border:5px solid #213d9b;
+            padding:10px;
+            float:center;
+           
+        }
+        h1{
+            margin:0px;
+            top:0;
+            position:fixed;
+            width:100%;
+        }
+        #table1{
+            border-collapse: collapse;
+        }
+        #table1 tr th, td{
+            padding:5px 30px 5px 5px;
+        }
+        #table2{
+            border-collapse: collapse;
+        }
+        #table2 tr th{
+            background-color: grey;
+            padding:5px 30px 5px 5px;
+            
+        }
+        #table2 tr td{
+            background-color: lightgrey;
+        }
+        #table3{
+            border-collapse: collapse;
+        }
+        thead, tbody, tfoot{
+            text-align:center;
+        }
+        #table3 thead{
+            background-color:rgb(38, 120, 168);
+        }
+        #table3 tbody tr:nth-child(even){
+            background-color: pink;
+        }
+        #table3 tbody tr:nth-child(even):hover{
+            background-color: lightsalmon;
+        }
+        #table3 tbody tr:nth-child(odd){
+            background-color: lavender;
+        }
+        #table3 tbody tr:nth-child(odd):hover{
+            background-color: rgb(12, 160, 160);
+        }
+        
+        table#table3, th.t3, td.t3{
+            padding:10px;
+            border:5px solid whitesmoke;
+        }
+        table.ingre{
+            margin-left:2em;
+            border-collapse: collapse;
+        }
+        #recipes .ingre tr{
+            border-bottom: 1px solid grey;
+        }
+        #recipes .ingre .ingredients{
+            text-align:left;
+            padding-right: 2em;
+        }
+        #recipes .ingre .amounts{
+            text-align:right;
+            padding-left: 2.2em;
+        }
+    </style>
+   
+</head>
+<body>
+    <h1 style="text-align:center; color:#df685c; background:url(https://images.unsplash.com/photo-1487088678257-3a541e6e3922?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=967&q=80)">Activity on HTML/CSS</h1>
+    
+    <article style="background:#c5e1f0">
+        <nav>
+            <ul>
+                <li>Everyday life</li>
+                <li>Contact me</li>
+                <li>My favorite recipes</li>
+                <li>Tables</li>
+                <li>Audio practice</li>
+                <li>Fruit map</li>
+            </ul>
+        </nav>
+        <section>
+            <details>
+        <summary>Everyday life</summary>
+            <ul id="menu">
+                <a href="#study"><li>study</li></a>
+                <a href="#cooking"><li>cooking</li></a>
+                <a href="#exercise"><li>exercise</li></a>
+            </ul>
+            </details>
+        <p>In this quarter, I studied at home and nearly go outside, except for bi-weekly grocery shopping</p>
+        <p>I do cooking on my own, and exercise at home following <i>Youtube</i> bloggers</p>
+        <img id="study" width="400px" src="images/study.jpeg" alt="study at home" title="study at home">
+        <img id="cooking" width="300px" src="images/cooking.jpeg" alt="cooking" title="cooking">
+        <img id="exercise" width="400px" src="images/exercise.jpeg" alt="exercise" title="exercise">
+        <a style="background-color:#df685c; text-decoration: none; border-radius: 12px; padding:20px 34px; text-align: center; display: inline-block; color: black; font-size:20px; border:none; cursor: pointer;" href="#" target="_blank" class="button">Click to view more</a>
+        </section>
+        <hr>
+        <section id="contact">
+            <details>
+            <summary>Contact me</summary>
+            <a style="text-decoration:none;" href="#" target="_blank">Facebook</a><br/>
+            <a style="text-decoration:none;" href="mailto:abc@gmail.com">Email me</a> 
+            </details>
+        </section>
+        <hr>
+        <details>
+            <summary>My Favorite Recipes</summary>
+    <section id="recipes">
+        <h3>Soup</h3>
+        <img width="300px" src="https://images.unsplash.com/photo-1512003867696-6d5ce6835040?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80" alt="chicken soup">
+        <h4>Lists of ingredients</h4>
+        <table class="ingre">
+            <tr><th class="ingredients">Ingredients</th> <th class="amount">Amounts</th></tr>
+            
+                <tr><td class="ingredients">ingre 1</td> <td class="amounts">200 grams</td></tr>
+                <tr><td class="ingredients">ingre 2</td> <td class="amounts">2000 grams</td></tr>
+                <tr><td class="ingredients">ingre 3</td> <td class="amounts">20 grams</td></tr>
+        </table>
+        
+
+        <h3>Vegetables</h3>
+            <img width="300px" src="https://images.unsplash.com/photo-1522184216316-3c25379f9760?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80" alt="carrots">
+            <h4>Lists of ingredients</h4>
+            <ul class="ingre">
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
+            </details>
+            </section>
+            <section id="tables">
+                <h2>Tables</h2>
+                <h3>Table no.1</h3>
+                <caption>Table no.1</caption>
+                <!--Create a simple 3x3 table with the first row containing header cells. You may choose not to add any styling including border. -->
+                <table border=1 id="table1">
+                    <tr><th>Attribute</th> <th>Attribute</th> <th>Attribute</th></tr>
+
+                    <tr><td>src</td> <td>Used to specify the URL of the image</td> <td>src=“images/test.png"</td></tr>
+                    <tr><td>alt</td> <td>src=“images/test.png"</td> <td>alt=“Test image for HTML5 course"</td></tr>
+                </table>
+                <br>
+                <h3>Table no.2</h3>
+                <table border=1 id="table2">
+                    <caption>Table no.2</caption>
+                    <tr><th>AA</th> <th>BB</th> <th>CC</th></tr>
+
+                    <tr><td>aa</td> <td>bb</td> <td rowspan="2"></td></tr>
+
+                    <tr><td colspan="2">cc</td></tr>
+                </table>
+                <br>
+                <h3>Table no.3</h3>
+                <table border=1 id="table3">
+                    <caption>Table no.3</caption>
+                    <thead>
+                        <tr class="t3"><th class="t3">AAA</th> <th class="t3">BBB</th><th class="t3">CCC</th> <th class="t3">DDD</th></tr>
+                    </thead>
+                    <tbody>
+                        <tr class="t3"><td class="t3">aaa</td> <td class="t3">bbb</td> <td class="t3">ccc</td> <td class="t3">ddd</td></tr>
+                        <tr class="t3"><td class="t3">eee</td> <td class="t3">fff</td> <td class="t3">ggg</td> <td class="t3">hhh</td></tr>
+                        <tr class="td3"><td class="t3">iii</td> <td class="t3">jjj</td> <td class="t3">kkk</td> <td class="t3">lll</td></tr>
+                    </tbody>
+                    <tfoot>
+                        <tr class="t3"><td colspan="2" class="t3">mmm</td> <td colspan="2" class="t3">nnn</td></tr>
+                    </tfoot>
+                </table>
+            </section>
+            <section id="anv">
+                <h2>Audio practice</h2>
+                <h3>Mojito by Jay Chou</h3>
+                <audio src="mojito.mp3" controls muted preload="auto">Your browser does not support the audio file</audio>
+                
+                <iframe name="Mojito by Jay Chou" width="400" height="300" src="https://www.youtube.com/embed/-biOGdYiF-I" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+                <h3>Samurai Pizza Cats</h3>
+                <video controls>
+                    <source src="cat__online-video-cutter.com_.mp4" type="video/mp4">
+                        <track src="" kind="captions">Your browser does not support the HTML5 video element.
+                </video>
+            </section>
+            <section id="fruits">
+                <h2>Fruits Map</h2>
+                <img style="border: none;" src="images/fruits.jpeg" usemap="#image-map">
+                
+                <map name="image-map">
+                    <area target="_blank" alt="Avocado" title="Avocado"
+                        href="https://www.healthline.com/nutrition/12-proven-benefits-of-avocado#1" coords="610,689,799,548"
+                        shape="rect">
+                    <area target="_blank" alt="Cherry" title="Cherry" href="https://www.healthline.com/nutrition/cherries-benefits"
+                        coords="158,528,93,441" shape="rect">
+                    <area target="_blank" alt="Blackberry" title="Blackberry"
+                        href="https://www.healthline.com/health/benefits-of-blackberries" coords="244,330,313,451" shape="rect">
+                    <area target="_blank" alt="Guava" title="Guava" href="https://www.healthline.com/nutrition/8-benefits-of-guavas"
+                        coords="45,457,85,551" shape="rect">
+                    <area target="_blank" alt="Blueberry" title="Blueberry"
+                        href="https://www.healthline.com/nutrition/10-proven-benefits-of-blueberries" coords="616,300,681,345"
+                        shape="rect">
+                    <area target="_blank" alt="Peach" title="Peach" href="https://www.healthline.com/nutrition/peach-fruit-benefits#:~:text=Peaches%20are%20rich%20in%20many%20vitamins%2C%20minerals%2C%20and%20beneficial%20plant,improved%20digestion%20and%20heart%20health." coords="937,169,814,62" shape="rect">
+                </map>
+            </section>
+    </article>
+
+</body>
+</html>

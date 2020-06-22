@@ -1,0 +1,85 @@
+html, body{
+    margin:0;
+    padding:0;
+}
+h1{
+    text-align: center;
+    background:url(images/kitchen.jpeg) no-repeat;
+    margin:0px 0px 10px 0px;
+    top:0;
+    left:0;
+    width:100%;
+    height:350px;
+    line-height: 7em;
+    color:white;
+}
+h2{
+    color:#4e3328;
+}
+nav{
+    text-align: center;
+    line-height: 32px;
+    background-color: #E9DEDC;
+    margin:0x;
+}
+
+nav ul{
+    margin-top: 0px;
+}
+nav ul a{
+    display: inline-block;
+    top:10px;
+    padding:0px 10px 0px 10px;
+    margin:5px;
+    font-size: 20px;
+    color: #4e3328;
+    text-decoration: none;
+    list-style-type: none;
+}
+nav ul a:hover{
+    color:#a4543d;
+}
+#fruits .img-right{
+    float:right;
+    width:300px;
+    padding-right: 100px;
+}
+.sub-menu1, .sub-menu2{
+    color:#a4543d;
+    font-size: 18px;
+    font-weight: bolder;
+    margin-left: 5px;
+}
+.sub-menu1{
+    cursor:context-menu;
+}
+article ul li{
+    line-height: 25px;
+    list-style-type: circle;
+}
+
+#dinner .img-right{
+    float: right;
+    width:300px;
+    padding-right: 100px;
+}
+
+.ingre{
+    border-collapse: collapse;
+    margin-left: 2em;
+}
+.ingre tr{
+    border-bottom: 1px solid grey;
+}
+.ingre .Ingredients{
+    text-align:left;
+    padding-right:2em;
+}
+.ingre .amounts{
+    text-align:right;
+    padding-left:2.2em;
+}
+
+article ol li{
+    line-height: 25px;
+}
